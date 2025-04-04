@@ -1,0 +1,123 @@
+/* 전체 배경 */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f7fa;
+  font-family: Arial, sans-serif;
+}
+
+/* 메인 레이아웃 */
+.container {
+  position: absolute;
+  top: 50px; /* 페이지 상단에서 50px 떨어지도록 설정 */
+  right: 50px; /* 화면 오른쪽에서 50px 거리 */
+  width: 500px;
+  height: 600px;
+  background: rgb(79, 103, 174);
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.incontainer {
+  width: 300px;
+  height: 400px;
+  background-color: #f4f5f6;
+  border-radius: 0px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(58%, -50%); /* 가운데 정렬 */
+}
+
+h1 {
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+ul {
+  margin: 0;
+}
+
+.big {
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.my {
+  display: block; /* 블록 요소처럼 만들어서 줄바꿈 적용 */
+  font-style: italic; /* i 태그 기본 기울임 유지 */
+  margin-top: 10px; /* h1과의 간격 조절 */
+  margin-left: 20px;
+}
+
+.keyword {
+  margin-top: 130px;
+  margin-left: 20px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.tag-container {
+  display: flex;
+  gap: 10px; /* 태그 사이 간격 */
+  margin-left: 20px;
+}
+
+.tag {
+  background-color: #2867d2; /* 파란색 배경 */
+  color: white; /* 흰색 글씨 */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 15px; /* 둥근 모서리 */
+  display: inline-block;
+}
+
+.me img {
+  width: 300px; /* 부모 요소에 맞춰서 크기 조절 */
+  left: 814px;
+  top: 21%;
+  height: auto;
+  display: block; /* 불필요한 여백 제거 */
+  position: absolute;
+}
+
+.photo {
+  top: 58%;
+  left: 5%;
+  font-size: 18px;
+
+  position: absolute;
+}
+hr {
+  width: 80%; /* 가로줄 길이 */
+  margin: 10px auto; /* 중앙 정렬 */
+  border: 0;
+  height: 1px;
+  background-color: gray;
+}
+
+#callButton {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999; /* 다른 요소 위에 보이도록 */
+}
+
+#callButton:hover {
+  background-color: #0056b3;
+}

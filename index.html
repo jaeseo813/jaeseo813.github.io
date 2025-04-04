@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개 페이지</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><strong> 심재서 </strong></h1>
+    <ul>
+      <li>컴퓨터 공학부 25학번</li>
+      <li>13기 아기사자</li>
+    </ul>
+    <h1 class="big">안녕하세요!</h1>
+    <p class="my">
+      벌써 두 번째 세션 과제를 하고 있네요. <br />
+      자기소개를 되게 자주하는 것 같아요..<br />
+      열심히 하겠습니다!
+    </p>
+    <h3 class="keyword">Keyword</h3>
+    <div class="container"></div>
+    <div class="incontainer">
+      <h6 class="photo">
+        <hr />
+        양파쿵야 닮았다는 말을 종종 듣습니다.
+      </h6>
+    </div>
+    <div class="me">
+      <img
+        src="https://ifh.cc/g/o1oWSo.jpg"
+        alt="양파 쿵야 사진"
+        class="profile-img"
+      />
+    </div>
+    <div class="tag-container">
+      <span class="tag">ENTJ</span>
+      <span class="tag">솔직한</span>
+      <span class="tag">쾌활한</span>
+    </div>
+    <button id="callButton">📞 전화하기</button>
+    <script>
+      document
+        .getElementById("callButton")
+        .addEventListener("click", function () {
+          alert("이 번호는 없는 번호입니다!");
+        });
+    </script>
+  </body>
+</html>
